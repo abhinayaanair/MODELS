@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Next Action Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Asur Web Series Next Action Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="character">Character:</label>
+            <select id="character" name="character">
+                <option value="Dhananjay Rajput">Dhananjay Rajput</option>
+                <option value="Nikhil Nair">Nikhil Nair</option>
+                <option value="Lolark Dubey">Lolark Dubey</option>
+                <option value="Rasool">Rasool</option>
+                <option value="Rhea">Rhea</option>
+            </select><br><br>
+
+            <label for="time_of_day">Time of Day:</label>
+            <select id="time_of_day" name="time_of_day">
+                <option value="Night">Night</option>
+                <option value="Evening">Evening</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+            </select><br><br>
+
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="Lab">Lab</option>
+                <option value="Office">Office</option>
+                <option value="Home">Home</option>
+            </select><br><br>
+
+            <label for="previous_action">Previous Action:</label>
+            <select id="previous_action" name="previous_action">
+                <option value="Research">Research</option>
+                <option value="Meeting">Meeting</option>
+                <option value="Sleeping">Sleeping</option>
+                <option value="Observing">Observing</option>
+                <option value="Reading">Reading</option>
+                <option value="Experimenting">Experimenting</option>
+                <option value="Testing">Testing</option>
+            </select><br><br>
+
+            <input type="submit" value="Predict Next Action">
+        </form>
+    </div>
+</body>
+</html>
